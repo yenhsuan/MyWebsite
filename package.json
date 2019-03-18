@@ -1,0 +1,19 @@
+{
+  "name": "terry-website",
+  "version": "1.0.0",
+  "description": "Terry's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yenhsuan/MyWebsite.git"
+  },
+  "author": "Terry (Yen-Hsuan)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yenhsuan/MyWebsite/issues"
+  },
+  "homepage": "https://github.com/yenhsuan/MyWebsite#readme"
+}
