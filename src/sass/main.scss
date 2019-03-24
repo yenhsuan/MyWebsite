@@ -1,4 +1,10 @@
+html {
+  font-size: 10px; /* 1rem = 10px */
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-text;
+}
+
 body {
-  /* 1rem = 10px */
-  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
 }

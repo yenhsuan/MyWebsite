@@ -4,7 +4,7 @@
   "description": "Terry's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --config ./webpack.dev.config.js --mode development",
+    "start": "NODE_ENV=development webpack-dev-server --config ./webpack.dev.config.js --mode development --hot",
     "build:dev -w": "npm run clean && NODE_ENV=development webpack --config ./webpack.dev.config.js --mode development --watch",
     "build:dev": "npm run clean && NODE_ENV=development webpack --config ./webpack.dev.config.js --mode development",
     "build:prod": "npm run clean && NODE_ENV=production webpack --config ./webpack.prod.config.js --mode production",
@@ -43,6 +43,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
+    "raw-loader": "^2.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "stylelint": "^9.10.1",
@@ -55,6 +56,7 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "typed.js": "^2.0.10"
   }
 }
