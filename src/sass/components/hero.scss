@@ -65,15 +65,11 @@
     text-align: left;
 
     @include respond-below(md) {
-      font-size: 3.25rem;
-    }
-
-    @include respond-below(xs) {
-      font-size: 2.75rem;
+      font-size: 3.5rem;
     }
 
     @include respond-below(xxs) {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 
