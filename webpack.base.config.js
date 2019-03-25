@@ -62,6 +62,9 @@ const config = {
         exclude: [
           path.join(__dirname, './node_modules'),
         ],
+        options: {
+          interpolate: true,
+        },
       },
     ],
   },

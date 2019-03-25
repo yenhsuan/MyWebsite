@@ -1,0 +1,38 @@
+$section-max-width: 128rem;
+$section-min-height: 56rem;
+$section-max-height: 204.8rem;
+
+$breakpoints: (
+  xxxs: 320px,
+  xxs: 480px,
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+// Bootstrap Media Query Wrappers
+@mixin respond-above($breakpoint-key) {
+  $breakpoint: map-get($breakpoints, $breakpoint-key);
+
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin respond-below($breakpoint-key) {
+  $breakpoint: map-get($breakpoints, $breakpoint-key);
+
+  @media (max-width: ($breakpoint - 1)) {
+    @content;
+  }
+}
+
+@mixin respond-between($lower-key, $upper-key) {
+  $upper: map-get($breakpoints, $upper-key);
+  $lower: map-get($breakpoints, $lower-key);
+
+  @media (min-width: $lower) and (max-width: ($upper - 1)) {
+    @content;
+  }
+}
