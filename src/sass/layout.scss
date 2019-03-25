@@ -1,4 +1,4 @@
-$section-max-width: 128rem;
+$section-max-width: 102.4rem;
 $section-min-height: 56rem;
 $section-max-height: 204.8rem;
 
@@ -11,7 +11,7 @@ $breakpoints: (
   lg: 1200px
 );
 
-// Bootstrap Media Query Wrappers
+/* Bootstrap Media Query Wrappers */
 @mixin respond-above($breakpoint-key) {
   $breakpoint: map-get($breakpoints, $breakpoint-key);
 
@@ -35,4 +35,32 @@ $breakpoints: (
   @media (min-width: $lower) and (max-width: ($upper - 1)) {
     @content;
   }
+}
+
+/* Basic grid */
+.container {
+  margin: 0 auto;
+  max-width: $section-max-width;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  @include respond-below(sm) {
+    flex-direction: column;
+  }
+
+  @include respond-below(xxs) {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+
+.col {
+  flex: 1 1;
 }
