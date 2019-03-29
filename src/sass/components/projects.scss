@@ -60,6 +60,10 @@
   background-color: $near-white;
   box-shadow: 0.2rem 0.2rem 0.6rem $placeholder-text;
 
+  @include respond-below(xs) {
+    width: 32rem;
+  }
+
   &__cover {
     height: 18rem;
     background-size: cover;
