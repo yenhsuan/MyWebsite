@@ -92,6 +92,14 @@
     &--7 {
       background-image: url('../../assets/project-crud.jpg');
     }
+
+    &--8 {
+      background-image: url('../../assets/project-jsds.png');
+    }
+
+    &--9 {
+      background-image: url('../../assets/project-website.png');
+    }
   }
 
   &__content {
@@ -120,6 +128,16 @@
     color: $secondary-text;
   }
 
+  &__tag--ongoing {
+    color: $light-red;
+    border-color: $light-red;
+  }
+
+  &__tag--new {
+    color: $yellow;
+    border-color: $yellow;
+  }
+
   &__btn {
     position: absolute;
     display: inline-block;
@@ -142,6 +160,14 @@
 
     &--green:hover {
       background: darken($green, 5%);
+    }
+
+    &--black {
+      background: darken($regular-text, 10%);
+    }
+
+    &--black:hover {
+      background: $near-black;
     }
   }
 }
