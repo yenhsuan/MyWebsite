@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* 1rem = 10px */
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-text;
+  background-color: $near-white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}

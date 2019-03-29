@@ -45,8 +45,26 @@
     }
 
     &--info {
+      position: relative;
       color: $primary-text;
       flex: 1 1;
+    }
+
+    &--info::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      min-width: 50vw;
+      overflow: hidden;
+      background-color: $near-white;
+      z-index: -1;
+
+      @include respond-below(md) {
+        min-width: 0;
+        left: 0;
+      }
     }
   }
 

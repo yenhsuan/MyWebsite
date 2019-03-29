@@ -1,0 +1,177 @@
+.project {
+  position: relative;
+  background: none;
+
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    background: url(../../assets/bg-project.jpg) center center;
+    background-size: cover;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    color: $near-black;
+  }
+
+  &__row {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @include respond-below(sm) {
+      flex-direction: row;
+    }
+
+    @include respond-below(xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex: 0 0 33.33332%;
+    justify-content: center;
+
+    @include respond-below(md) {
+      flex: 0 0 50%;
+    }
+
+    @include respond-below(xs) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.project-container {
+  padding-top: 5rem;
+}
+
+.project-card {
+  position: relative;
+  display: inline-block;
+  margin: 1.5rem 1rem 2.5rem 1rem;
+  width: 24rem;
+  height: 38rem;
+  background-color: $near-white;
+  box-shadow: 0.2rem 0.2rem 0.6rem $placeholder-text;
+
+  @include respond-below(xs) {
+    width: 32rem;
+  }
+
+  &__cover {
+    height: 18rem;
+    background-size: cover;
+    background-position: center;
+
+    &--1 {
+      background-image: url('../../assets/project-cp.jpg');
+    }
+
+    &--2 {
+      background-image: url('../../assets/project-cod.jpg');
+    }
+
+    &--3 {
+      background-image: url('../../assets/project-tweets.png');
+    }
+
+    &--4 {
+      background-image: url('../../assets/project-snake.png');
+    }
+
+    &--5 {
+      background-image: url('../../assets/project-yrb.jpg');
+    }
+
+    &--6 {
+      background-image: url('../../assets/project-spg.jpg');
+    }
+
+    &--7 {
+      background-image: url('../../assets/project-crud.jpg');
+    }
+
+    &--8 {
+      background-image: url('../../assets/project-jsds.png');
+    }
+
+    &--9 {
+      background-image: url('../../assets/project-website.png');
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__title {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    font-family: 'Comfortaa', sans-serif;
+    color: $regular-text;
+  }
+
+  &__tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  &__tag {
+    font-size: 1rem;
+    padding: 0.1rem 0.4rem;
+    margin: 0.3rem 0.4rem;
+    border: 0.1rem solid $placeholder-text;
+    border-radius: 0.2rem;
+    color: $secondary-text;
+  }
+
+  &__tag--ongoing {
+    color: $light-red;
+    border-color: $light-red;
+  }
+
+  &__tag--new {
+    color: $yellow;
+    border-color: $yellow;
+  }
+
+  &__btn {
+    position: absolute;
+    display: inline-block;
+    bottom: 1rem;
+    right: 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    color: $near-white;
+    background: $blue;
+    border-radius: 2rem;
+    transition: all linear 0.2s;
+
+    &:hover {
+      background: $dark-blue;
+    }
+
+    &--green {
+      background: $green;
+    }
+
+    &--green:hover {
+      background: darken($green, 5%);
+    }
+
+    &--black {
+      background: darken($regular-text, 10%);
+    }
+
+    &--black:hover {
+      background: $near-black;
+    }
+  }
+}
