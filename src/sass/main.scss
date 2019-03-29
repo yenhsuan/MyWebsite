@@ -1,17 +1,9 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px; /* 1rem = 10px */
-  font-family: 'Open Sans', sans-serif;
-  color: $primary-text;
-  background-color: $near-white;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'normalize.scss';
+@import 'layout.scss';
+@import 'common.scss';
+@import 'components/hero.scss';
+@import 'components/about.scss';
+@import 'components/projects.scss';
+@import 'components/footer.scss';

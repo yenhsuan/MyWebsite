@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-import './sass/index.scss';
+import './sass/main.scss';
 import './main.html';
 
 import registerTyping from './js/hero';
