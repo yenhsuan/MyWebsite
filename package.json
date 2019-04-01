@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config ./webpack.dev.config.js --mode development --hot",
-    "build:dev -w": "npm run clean && NODE_ENV=development webpack --config ./webpack.dev.config.js --mode development --watch",
+    "build:dev-watch": "npm run clean && NODE_ENV=development webpack --config ./webpack.dev.config.js --mode development --watch",
     "build:dev": "npm run clean && NODE_ENV=development webpack --config ./webpack.dev.config.js --mode development",
+    "build:prod-watch": "npm run clean && NODE_ENV=production webpack --config ./webpack.prod.config.js --mode production --watch",
     "build:prod": "npm run clean && NODE_ENV=production webpack --config ./webpack.prod.config.js --mode production",
     "lintcss": "./node_modules/stylelint/bin/stylelint.js ./src/sass/**/*.scss",
-    "clean": "rm -rf dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,8 @@
   "homepage": "https://github.com/yenhsuan/MyWebsite#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
     "@babel/preset-env": "^7.3.4",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
@@ -55,6 +57,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@babel/runtime": "^7.4.2",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",
     "typed.js": "^2.0.10"

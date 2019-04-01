@@ -1,4 +1,5 @@
 import Typed from 'typed.js';
+import $ from 'jquery';
 
 const options = {
   startDelay: 150,
@@ -8,8 +9,12 @@ const options = {
   loop: true,
 };
 
-const registerTyping = (querySelector, content) => (
+export const registerTyping = (querySelector, content) => (
   new Typed(querySelector, { ...options, strings: [content] })
 );
 
-export default registerTyping;
+export const registerHeroBtnClick = () => {
+  $('.hero__main-button').click(() => {
+    $("a[href='#about']").click();
+  });
+};

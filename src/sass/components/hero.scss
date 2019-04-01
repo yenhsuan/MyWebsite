@@ -198,6 +198,7 @@
   .icon-link {
     padding: 0 1.5rem;
     color: $secondary-text;
+    transition: all ease-in-out 0.2s;
 
     &:hover {
       color: $near-white;
