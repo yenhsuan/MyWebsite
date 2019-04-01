@@ -65,7 +65,7 @@
   }
 
   @include respond-below(xxs) {
-    width: 24rem;
+    width: 100%;
   }
 
   &__cover {
