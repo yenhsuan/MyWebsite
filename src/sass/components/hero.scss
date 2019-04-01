@@ -25,6 +25,7 @@
       position: relative;
       color: $near-white;
       flex: 1 1;
+      z-index: 0;
     }
 
     &--portrait::after {
@@ -48,6 +49,7 @@
       position: relative;
       color: $primary-text;
       flex: 1 1;
+      z-index: 0;
     }
 
     &--info::after {
