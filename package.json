@@ -10,7 +10,8 @@
     "build:prod-watch": "npm run clean && NODE_ENV=production webpack --config ./webpack.prod.config.js --mode production --watch",
     "build:prod": "npm run clean && NODE_ENV=production webpack --config ./webpack.prod.config.js --mode production",
     "lintcss": "./node_modules/stylelint/bin/stylelint.js ./src/sass/**/*.scss",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "deploy": "npm run build:prod && sh deploy.sh"
   },
   "repository": {
     "type": "git",
