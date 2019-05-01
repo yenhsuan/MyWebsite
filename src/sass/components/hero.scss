@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  overflow-x: hidden;
   height: 100vh;
   min-height: $section-min-height;
 
@@ -10,7 +10,7 @@
     max-width: $section-max-width;
     flex-grow: 1;
 
-    @include respond-below(sm) {
+    @include respond-below(md) {
       flex-direction: column-reverse;
     }
   }
