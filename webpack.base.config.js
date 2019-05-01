@@ -71,7 +71,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './public/index.html'),
-      // favicon: path.join(__dirname, './public/favicon/favicon.ico'),
+      favicon: path.join(__dirname, './public/favicon.ico'),
       minify: {
         collapseWhitespace: process.env.NODE_ENV === 'production',
       },

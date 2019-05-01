@@ -9,7 +9,7 @@
     height: 100vh;
     left: 0;
     right: 0;
-    z-index: -2;
+    z-index: -5;
     background: url(../../assets/bg-project.jpg) center center;
     background-size: cover;
   }
@@ -62,6 +62,10 @@
 
   @include respond-below(xs) {
     width: 32rem;
+  }
+
+  @include respond-below(xxs) {
+    width: 100%;
   }
 
   &__cover {
