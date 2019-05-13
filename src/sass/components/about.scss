@@ -7,6 +7,16 @@
 
   &__experience-col {
     padding-bottom: 10rem;
+
+    @include respond-below(sm) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  &__skill-col {
+    @include respond-below(sm) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__timeline {
