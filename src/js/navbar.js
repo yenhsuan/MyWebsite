@@ -29,7 +29,7 @@ export const registerNavBarSpyEffect = () => {
 };
 
 export const registerSmoothScrollingEffect = () => {
-  $('.nav-item__link').each((index, item) => {
+  $('.scrolling-link').each((index, item) => {
     $(item).click((e) => {
       e.preventDefault();
       const tag = $(e.target).attr('href');
