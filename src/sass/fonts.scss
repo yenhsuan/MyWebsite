@@ -7,13 +7,17 @@
 @import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 
 $font-family-map: (
+  ant: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue'",
   sans: 'Open Sans',
   cursive: 'Baloo Chettan',
+  monospace: 'Roboto Mono',
 );
 
 $font-fallback-map: (
+  ant: "Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
   sans: 'Helvetica, Arial, sans-serif',
   cursive: 'cursive',
+  monospace: 'monospace'
 );
 
 $font-weight-map: (
