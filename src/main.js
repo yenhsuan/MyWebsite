@@ -16,7 +16,7 @@ hotReloadHTML();
 $(document).ready(() => {
   registerTyping(
     '.hero__typing-content',
-    'I <b class=\'pink\'>CODE</b> THEREFORE <b class=\'yellow\'>I AM.</b>',
+    'I <b class=\'pink\'>CODE</b> therefore <b class=\'yellow\'>I AM.</b>',
   );
 
   registerNavBarScrollEffect();
