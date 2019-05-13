@@ -124,9 +124,8 @@
     @media screen and (min-height: 700px) {
       position: absolute;
       margin-top: 0;
-      left: 50%;
+      left: calc(50% - 1.3rem);
       bottom: 5%;
-      transform: translateX(-50%);
     }
   }
 }
